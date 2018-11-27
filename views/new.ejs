@@ -1,0 +1,49 @@
+<% include partials/header %>
+
+<div class="ui main text container">
+    <form class="ui form" action="/recipes" method="POST">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="recipe[name]" placeholder="name">
+        </div>
+
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="recipe[image]" placeholder="image URL">
+        </div>
+
+        <div class="field">
+            <label>Description</label>
+            <textarea name="recipe[description]"></textarea>
+        </div>
+
+        <div class="field">
+                <label>Ingredients</label>
+                <textarea name="recipe[ingredients]"></textarea>
+        </div>
+
+        <div class="field">
+                <label>Preparation</label>
+                <textarea name="recipe[preparation]"></textarea>
+        </div>
+
+        <div class="field">
+            <label>Difficulty</label>
+            <select class="ui dropdown" name="recipe[difficulty]">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Very Hard"> Very Hard</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Time for cooking</label>
+            <input type="text" name="recipe[time]" placeholder="time mins/hrs">
+        </div>
+        
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</div>
+
+<% include partials/header %>

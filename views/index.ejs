@@ -1,0 +1,29 @@
+<% include partials/header %>
+<div class="ui main text container">
+    <div class="ui divided items">
+        <% recipes.forEach(function(recipe){ %>
+        <div class="item">
+            <div class="image">
+                <img src="<%= recipe.image %>">
+            </div>
+            <div class="content">
+                <span class="recipe_name"><%= recipe.name %></span>
+                <div class="meta">
+                    <span><%= recipe.description.substring(0, 150) + "..." %></span>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
+                <div class="ui star rating" data-rating="3"></div>
+                <a href="/recipes/<%= recipe._id %>" class="ui inverted orange button">Show Recipe</a>  
+                <div class="extra">
+                    <p> <i class="clock outline icon"></i><%= recipe.time %></p>
+                    <p>Difficulty: <%= recipe.difficulty %></p>
+                    <p id="date"><%= recipe.created.toDateString() %></p>
+                </div>
+            </div>
+        </div>
+        <%});%>
+    </div>
+</div>
+<% include partials/footer %>

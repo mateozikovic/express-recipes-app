@@ -1,0 +1,35 @@
+.container.main{
+    margin-top: 7.0em;
+    margin-bottom: 2.0em;
+}
+
+.recipe_name{
+    font-size: 20px;
+}
+
+.recipe_item{
+    margin-top: 7px;
+    border-bottom: 1px solid #780000;
+    margin-bottom: 7px;
+    padding: 5px;
+}
+
+.recipe_item_title{
+    text-decoration-line: underline;
+}
+
+#delete{
+    display: inline;
+}
+
+i.utensils.icon {
+    font-size: 2.0em;
+}
+
+#header_title{
+    font-size: 2.0em;
+}
+
+#date{
+    text-align: right;
+}
